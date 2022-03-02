@@ -1,0 +1,64 @@
+body {
+	background-image: url("sw_background.png");
+   cursor: default;
+}
+
+h1{
+   color: gold;
+   font-family: cursive;
+}
+
+a{
+   color: gold;
+}
+
+a:hover{
+   color: skyblue;
+}
+
+h4{
+   color: gold;
+   font-family: cursive;
+}
+
+p{
+   color: black;
+   font-family: cursive;
+}
+
+span{
+   color: black;
+   font-family: cursive;
+}
+
+summary {
+   color: gold;
+   text-decoration: underline;
+   font-family: cursive;
+   margin-bottom: 10px;
+}
+
+details > summary:hover{
+   color: skyblue;
+   cursor: pointer;
+}
+
+button {
+   margin-top: 3px;
+   margin-left: 1.5px;
+   border: 1px outset black;
+   background: radial-gradient(black 30%, #38444c);
+   height:  23px;
+   text-align: center;
+   font-weight: bold;
+   background-color: black;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+button:hover{
+   background: none;
+   background-color: #f0f0f0;
+   color: black;
+}

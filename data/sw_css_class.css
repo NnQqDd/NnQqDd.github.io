@@ -1,0 +1,82 @@
+.leftDiv {
+      width: 49%;
+      float: left;
+      text-align: right;
+   }
+
+.rightDiv {
+      width: 49%;
+      float: right;
+      text-align: left;
+} 
+
+.tarea {
+   border: 3px outset black;
+   color: black;
+}
+
+.butt {
+   margin-top: 3px;
+   margin-left: 1.5px;
+   border: 1px outset black;
+   background: radial-gradient(black 30%, #38444c);
+   height:  23px;
+   width: 150px;
+   font-weight: bold;
+   background-color: black;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+.butt:hover {
+   background: none;
+   background-color: #f0f0f0;
+   color: black;
+}
+
+.input {
+   border: 1px outset black;
+   color: black;
+   text-align: center;
+   height: 40px;
+   width: 40px;
+   cursor: pointer;
+}
+
+.input:hover {
+   background-color: #f0f0f0;
+}
+
+.solved {
+   border: 1px outset black;
+   background-color: black;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+   height: 40px;
+   width: 40px;
+   cursor: pointer;
+}
+
+.solved:hover {
+   background-color: #f0f0f0;
+   color: black;
+}
+
+.first {
+   border: 1px outset black;
+   background-color: black;
+   text-align: center;
+   font-weight: bold;
+   color: dimgray;
+   height: 40px;
+   width: 40px;
+   cursor: pointer;
+}
+
+.first:hover {
+   background-color: #f0f0f0;
+   color: black;
+}
+

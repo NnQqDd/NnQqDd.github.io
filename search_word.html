@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search word solver</title>
+	<link rel="icon" href="data/sw_icon.png">
+	<link rel="stylesheet" href="data/sw_style.css"/>
+	<link rel="stylesheet" href="data/sw_css_class.css"/>
+	<a href="data/sw_manual.html">>>To manual page<<</a>
+</head>
+<body>
+	<div id="mainBody" style="text-align: center;">
+		<h1>Search word solver</h1>
+		<p>By Quang Duy</p>
+		<br><br>
+		<details open>
+			<summary>Word</summary>
+			<textarea id="stdin" cols="50" rows="2" class="tarea"></textarea>
+			<br>
+			<button onclick="clearTxt(stdin)">Clear</button>
+		</details>
+		<br>
+		<details open>
+			<summary>Letter board</summary>
+			<span>Current size:</span>
+			<span id="sizeRoom">9</span>
+			<button style="width: 30px;" onclick="incSize()">+</button>
+			<button style="width: 30px;" onclick="decSize()">-</button>
+			<br><br>
+			<div id="boardField" class="divwidth"></div>
+			<button onclick="clearBoard()">Clear</button>
+		</details>
+		<br>
+		<details>
+			<summary>Seed</summary>
+			<textarea id="seed" cols="50" rows="3" class="tarea"></textarea>
+			<br>
+			<button onclick="clearTxt(seed)">Clear</button>
+			<button onclick="load(seed.value.split(' '), 'yes')">Load</button>
+		</details>
+		<br>
+		<details>
+			<summary>More option</summary>
+			<input type="button" class="butt" id="searchMode" value="Straight Search" onclick="changeSearchMode()"/>
+			<br>
+			<input type="button" class="butt" id="uniqueness" value="Unique Solution" onclick="changeUniqueMode()">
+			<br>
+			<button style="width: 150px;" onclick="randomf()">Random</button>
+			<br>
+			<select id="reload" class="butt" style="width: 100px; text-align: left;">
+				<option id="markOp" value="0">(No reload)</option>
+			</select>
+			<button style="width: 48px" onclick="loadHis(2)"/>Ok</button>
+			<br>
+			<button id="shHis" style="width: 150px;" onclick="showHistory()">Show History</button>
+		</details>
+		<br>
+		<button style="width: 75px; cursor: url('data/search.png'), auto;" onclick="main()">Solve</button>
+		<hr>
+		<h4 id="mark">Solution</h4>
+		<div id="history" style="display: none;">
+			<hr>
+			<h4 id="markHis">History</h4>
+		</div>
+    </div>
+    <script src="data/sw_run_first.js"></script>
+    <script src="data/sw_main_button.js"></script>
+    <script src="data/sw_curved_search.js"></script>
+    <script src="data/sw_minor_button.js"></script>
+</body>
+</html>
